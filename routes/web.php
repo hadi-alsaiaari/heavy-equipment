@@ -10,12 +10,12 @@ Route::group(
     ],
     function () {
         Route::get('/', function () {
-            return view('dashboard.index');
-        });
+            return view('website.index');
+        })->name('index');
     }
 );
 
 
-Auth::routes();
+// Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

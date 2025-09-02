@@ -1,6 +1,8 @@
 <?php
 
 return [
+    'app_name' => 'معدات ثقيلة',
+    'username' => 'اسم المستخدم',
     'location'=>'احداثيات الموقع',
 
     'products' => 'المنتجات',

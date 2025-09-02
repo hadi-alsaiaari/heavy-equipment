@@ -1,7 +1,8 @@
 <?php
 
 return [
-
+    'app_name' => 'Heavy Equipment',
+    'username' => 'Username',
     'products'=>'Products',
     'categories'=>'Categories',
     'settings'=>'Settings',
