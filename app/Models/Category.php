@@ -14,6 +14,11 @@ class Category extends Model
 
     public $translatable = ['name'];
 
+    public function getCreatedAtAttribute($value)
+    {
+        return date('d/m/Y h:i A', strtotime($value));
+    }
+    
     public function products()
     {
         return $this->hasMany(Product::class, 'category_id');

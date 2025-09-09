@@ -37,4 +37,19 @@ class Setting extends Model
         'after_sale_content',
         'quality_policy',
     ];
+
+    public function getSiteLogoAttribute()
+    { 
+        return 'uploads/settings/' . $this->attributes['site_logo'];
+    }
+
+    public function getSiteFaviconAttribute()
+    {
+        return 'uploads/settings/' . $this->attributes['site_favicon'];
+    }
+    
+    public function getAboutUsImageAttribute()
+    {
+        return 'uploads/settings/' . $this->attributes['about_us_image'];
+    }
 }
